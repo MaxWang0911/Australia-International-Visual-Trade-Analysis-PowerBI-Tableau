@@ -1,4 +1,4 @@
-# 🇦🇺 Australian International Trade Visual Analytics (1988–2024)
+#  Australian International Trade Visual Analytics (1988–2024)
 
 This project presents a comprehensive visual analytics report on over three decades of Australian international trade, using official data from the Australian Bureau of Statistics (ABS). The analysis spans from 1988 to 2024 and is built using **Tableau** and **Microsoft Power BI**, covering 10 major trade categories and 67 subcategories.
 
