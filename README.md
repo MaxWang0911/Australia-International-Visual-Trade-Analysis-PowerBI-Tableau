@@ -1,43 +1,76 @@
-#  Australian International Trade Visual Analytics (1988–2024)
+#  Australian International Trade Visual Analytics (1988–2024)--Power BI & Tableau Project
 
-This project presents a comprehensive visual analytics report on over three decades of Australian international trade, using official data from the Australian Bureau of Statistics (ABS). The analysis spans from 1988 to 2024 and is built using **Tableau** and **Microsoft Power BI**, covering 10 major trade categories and 67 subcategories.
+> An end-to-end trade data analysis project leveraging **Power BI**, **Tableau**, and **Excel** to extract actionable insights from Australia’s category-level import and export patterns.  
+> It includes comprehensive **data modeling**, **trend discovery**, and **policy-level recommendations** based on historical patterns and category-specific trade behavior.
 
-## 📊 Objectives
-- Identify long-term trends, structural patterns, and volatility across import/export data
-- Examine Australia’s reliance on specific trade sectors, especially Category 7 (Machinery and Transport Equipment)
-- Provide visual storytelling through dashboards and storyboards
-- Deliver policy-relevant insights for enhancing trade resilience and industrial self-sufficiency
+---
 
-## 🧰 Tools & Technologies
-- **Tableau** – For dashboards and storyboards, excellent for storytelling and stakeholder communication
-- **Power BI** – For advanced data modelling, forecasting (using DAX), and custom measures
-- **Python & R scripts** – Used for selected statistical visualisations in Power BI
+## 🔍 Project Problem
 
-## 📁 Files Included
-- `14403000_A3.pbix` – Power BI dashboard file
-- `14403000_A3.twbx` – Tableau packaged workbook
-- `report.pdf` – Full analysis report (includes screenshots, commentary, and forecasts)
-- `README.md` – This file
+Australia's international trade plays a critical role in its economic performance. However, trade performance varies significantly across product categories and time periods.  
+This project aims to answer:
 
-## 🔍 Key Insights
-- **Category 7 (Machinery & Transport Equipment)** consistently drives trade deficits, accounting for ~40% of all imports.
-- **Category 3 (Mineral Fuels)** has led Australia’s trade surplus but shows high volatility due to global price shifts.
-- Subcategory 78 (Road Vehicles) alone accounts for ~50% of imports in Category 7—an indicator of Australia's dependency on vehicle imports.
-- Power BI and Tableau forecasts both suggest continued growth in road vehicle imports, with policy implications on industrial self-reliance.
+- Which product categories are driving trade growth or decline?
+- Are there shifting patterns in category composition over time?
+- Which subcategories warrant policy attention or intervention?
 
-## 📈 Visuals Used
-- Line Charts, Ribbon Charts, Boxplots, Heatmaps
-- Bubble Charts: YoY Growth vs Volatility
-- Interactive Filters and Drill-downs by Category/Subcategory
-- Forecast Models (Power BI: DAX-based; Tableau: Exponential Smoothing)
+---
 
-## ✅ Recommendations
-- Invest in domestic high-tech manufacturing (esp. EVs and components)
-- Reduce trade dependency on volatile sectors through diversification
-- Support infrastructure and freight reform to strengthen trade efficiency
+## 🧠 Analytical Approach
+
+### 1. 🧹 Data Preparation & Modeling (Excel + Power BI)
+
+- **Source**: Australia trade statistics (multi-year, category-level)
+- **Cleaned & structured** in Excel to standardize:
+  - Import/export values (millions)
+  - Time dimensions (months/years)
+  - Category & subcategory identifiers
+- **Modelling in Power BI**:
+  - Star schema with separate fact & dimension tables
+  - Time intelligence using DAX
+  - Measures: YoY change, subcategory share, rolling totals
+
+### 2. 📊 Visual Analytics
+
+#### 📌 Power BI Highlights:
+- **Line charts** for YoY growth trends by category
+- **Stacked area charts** for share evolution of subcategories
+- **Decomposition trees** to drill down from category to subcategory
+- **Forecasting & clustering** via analytics pane
+
+#### 📌 Tableau Highlights:
+- Dynamic dashboards with filters by region & category
+- Parameter controls for time period selection
+- Animated trend lines across time windows
+
+---
+
+## 💡 Recommendations
+
+- 🎯 **Policy Priority**: Focus on Category 7, especially Subcategory 78. Its subcategory strength contrasts with the parent category weakness.
+- 🔄 **Diversification Strategy**: Encourage emerging subcategories in Categories 2 & 9 with consistent growth.
+- 📉 **Deprioritise**: Categories showing long-term stagnation (e.g. Category 4) may not warrant further subsidies or negotiation.
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool      | Role |
+|-----------|------|
+| Excel     | Data cleaning, structuring raw tables |
+| Power BI  | Data modelling, advanced DAX, visual storytelling |
+| Tableau   | Interactive dashboards, user-driven exploration |
+| PDF Report| Final summary of findings and action points |
+
+---
 
 ## 📚 Data Source
 - [Australian Bureau of Statistics (ABS)](https://www.abs.gov.au/statistics/economy/international-trade)
 
-## 📄 License
-This project was developed for academic purposes as part of the **Data Visualisation and Visual Analytics (32146)** unit at the University of Technology Sydney (UTS). Student: **Zheng Wang**, ID: **14403000**
+✅ Outcome
+
+- Completed a full-cycle business data analytics case  
+- Used both **Power BI** and **Tableau** for comparison and delivery  
+- Identified **actionable trade policy directions** through category-level modeling  
+- Demonstrated multi-platform proficiency and strategic data storytelling
+
